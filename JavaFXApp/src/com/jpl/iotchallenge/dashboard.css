@@ -1,0 +1,142 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -icons-color: white;
+}
+
+.hBoxTitle {
+    -fx-background-color: #009ec1;
+}
+.hBoxFoot {
+    -fx-background-color: #42515e;
+}
+
+.labelUser {
+    -fx-font-family: Roboto-Regular;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+.textTitle{
+    -fx-font-family: Roboto-Regular;
+    -fx-font-size: 64px;
+    -fx-effect: innershadow( three-pass-box , derive(-icons-color,-70%) , 0.1em, 0.0 , 0.07em, 0.07em );
+    -fx-text-fill: linear-gradient(to bottom, derive(-icons-color,20%) 10%, derive(-icons-color,-40%) 80%);
+}
+
+.labelDevice {
+    -fx-font-family: Roboto-Regular;
+    -fx-font-size: 30px;
+    -fx-text-fill: #03A2BA;
+}
+.subLabelDevice {
+    -fx-font-family: Roboto-Regular;
+    -fx-font-size: 15px;
+    -fx-text-fill: #090909;
+}
+.subLabelTime {
+    -fx-font-family: Roboto-Regular;
+    -fx-font-size: 12px;
+    -fx-text-fill: #6d6d6d;
+}
+
+#window-close {
+    -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("resources/window-close.png");
+    -fx-padding: 6 6 4 6;
+}
+#window-min {
+    -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("resources/window-min.png");
+    -fx-padding: 6 6 4 6;
+}
+#window-max {
+    -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("resources/window-expand.png");
+    -fx-padding: 6 6 4 6;
+}
+#window-close:hover {
+    -fx-background-image: url("resources/window-close-over.png");
+}
+#window-min:hover {
+    -fx-background-image: url("resources/window-min-over.png");
+}
+#window-max:hover {
+    -fx-background-image: url("resources/window-expand-over.png");
+}
+#window-close:focused, #window-min:focused, #window-max:focused {
+    -fx-effect: dropshadow( three-pass-box , -fx-focus-color , 5, 0.7 , 0 , 0 );
+}
+
+.winToolbar {
+    -fx-background-color: null;
+    -fx-background-repeat: no-repeat;
+}
+.winToolbar:hover {
+    -fx-background-color: rgba(66,81,94,0.5);
+    -fx-background-border: #42515e;
+    -fx-background-repeat: no-repeat;
+}
+
+.awesome{
+    -icons-color: rgb(61,114,144);
+    -fx-font-family:  icons;
+    -fx-font-size: 40px;
+    -fx-effect: innershadow( three-pass-box , derive(-icons-color,-70%) , 0.1em, 0.0 , 0.07em, 0.07em );
+    -fx-text-fill: linear-gradient(to bottom, derive(-icons-color,20%) 10%, derive(-icons-color,-40%) 80%);
+}
+
+.tab-pane {
+    -fx-tab-min-width: 90px;
+    -fx-tab-min-height: 50px;
+    -fx-tab-max-height: 50px;
+}
+
+.tab-pane *.tab-header-background {
+    -fx-background-color: -fx-outer-border, -fx-inner-border, derive(-fx-color, -20%);
+    -fx-effect: innershadow(two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 0);
+}
+.tab .tab-label { 
+    -fx-text-fill: #828282;
+    -fx-font-size: 20px;
+}
+
+.tab-content-area 
+{
+-fx-background-color: -fx-control-inner-background;
+-fx-border-color: #828282;
+-fx-padding: 0.0em; /* 0 */
+}
+
+#status-blue {
+    -fx-fill: #009ec1;
+}
+
+#status-green {
+    -fx-fill: #88bc3f;
+}
+#status-gray {
+    -fx-fill: darkgray;
+}
+#status-red {
+    -fx-fill: #BD362F;
+}
+#status-off {
+    -fx-fill: #42515E;
+}
+
+.hboxDevice {
+    -fx-background-color: derive(#F0F0F0,-5%);
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+#hbox-green {
+    -fx-background-color: #88bc3f;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+}
