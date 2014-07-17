@@ -283,7 +283,7 @@ public class DTable extends LhingsDevice {
     // ************* private methods :  webservices ***************
 	private void webService_light(String payload, String lightNumber) {
 		try {
-			URL hueColorService = new URL("http://192.168.0.111/api/newdeveloper/lights/"+lightNumber+"/state");
+			URL hueColorService = new URL("http://192.168.1.101/api/newdeveloper/lights/"+lightNumber+"/state");
 			HttpURLConnection conn = (HttpURLConnection) hueColorService.openConnection();
 			conn.setDoOutput(true);
 			conn.setRequestMethod("PUT");
