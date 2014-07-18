@@ -73,7 +73,7 @@ public class DTable extends LhingsDevice {
     
 	public DTable() {
 		// Co-working space credenti
-        super("david@lhings.com", "coworking", 5000, "Table");
+        super("davidpenuela@gmail.com", "fabrica", 5000, "Table");
 
 	}
 
@@ -393,8 +393,7 @@ public class DTable extends LhingsDevice {
         System.out.println("send checkStatus to DesktopApp");
         CloseableHttpClient httpClient=null;
         CloseableHttpResponse response=null;
-        String uuidDesktopApp = devicesUser.get("Interface");
-        try {
+x        try {
             
             httpClient = HttpClients.createDefault();
             URI uri = new URI("https://www.lhings.com/laas/api/v1/devices/"+uuidDesktopApp+"/actions/checkStatus");
